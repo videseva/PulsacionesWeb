@@ -1,0 +1,292 @@
+body{
+margin: 0;
+padding: 0;
+background: #fff ;
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+	background:#fff;
+	-webkit-box-shadow: -2px 13px 26px 2px #C4C4C4; 
+	box-shadow: -2px 13px 26px 2px #C4C4C4;
+}
+
+
+header{
+	padding: 15px 0;
+	border-color: red;
+	border-bottom-width: 10px;
+	border-bottom: 10px solid #e0e0e0;
+	border-top: 10px solid #25A6D9;
+	
+}
+.logo{
+	width: 10%;
+	float: left;
+}
+header img{	
+	height: 60px;
+	clip-path: circle();
+	margin-left: 20px;
+}
+.menu{
+	background:	#fff;
+	height: 50px;
+
+}
+nav{
+	width: 90%;
+	margin: 0 auto;
+
+}
+ul {
+  list-style-type: none;
+  height:30%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+	float: right;
+}
+
+li a {
+  display: block;
+  color: grey;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+li a:hover{
+  color: #D92546;
+}
+li a.active {
+  background-color: #D92546;
+	border-radius: 67px;
+  color: white;
+}
+
+.sidebar{
+	color: gray;
+	width:30%;
+	height: 600px;
+	background-color: #fff;
+	border:10px solid  #e0e0e0;
+	float:left;
+	text-align: center;
+}
+article{
+	width:63%;
+    padding-top:5px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    float: right;
+}
+article h3{
+	color:#D92546;
+}
+footer{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color:yellow;
+	height: 70px;
+	background: #25A6D9;
+  	border-top: 10px solid #D92546;
+	border-color: #D92546;
+	color: #fff;
+}
+
+#FrmRegistro{
+	padding-left:30px;
+	padding-top: 10px;
+	margin-left: 30px; 
+	margin-top: 10px;
+	width: 70%;
+	height: 300px;
+	background:#fff;
+	border: 1px solid  #e0e0e0
+
+}
+#FrmRegistro label{
+	color:#424242;
+	padding-right: 12px;
+}
+
+#FrmRegistro h4{
+	color:#D92546;
+	text-align: center;
+} 
+
+.btn{
+	border-radius: 4px;
+	background: #25A6D9;
+	width: 120px;
+	color: #fff;
+	border:10px solid #25A6D9;
+	box-shadow: 7px 9px 5px -6px rgba(164,164,164,0.47);
+	-webkit-box-shadow: 7px 9px 5px -6px rgba(164,164,164,0.47);
+	-moz-box-shadow: 7px 9px 5px -6px rgba(164,164,164,0.47);
+}
+.btn:hover{
+	border-radius: 4px;
+	background:#0277bd;
+	width: 120px;
+	color: #fff;
+	border:10px solid #0277bd;;
+}
+
+.input-datos input {
+	border:none;
+	font-size: 15px;
+	border-bottom: 1px solid #bdbdbd;
+}
+.input-datos input:focus{
+	border:none;
+	outline: none;
+	font-size: 15px;
+	border-bottom: 1px solid #25A6D9;
+}
+
+.input-datos select{
+	border:1px solid #bdbdbd;
+}
+.card{
+	text-align: center;
+	align-content: center;
+	background: #fff;
+	width: 70%;
+	margin:0 auto;
+	border-bottom-top-right-radius:30px;
+	border-left:6px solid #25A6D9; 
+}
+.card h3{
+	color: gray;
+}
+aside .card img{
+	height: 120px;
+	clip-path: circle();
+}
+.informacionGeneral{
+	padding:5px;
+	margin: 0 auto;
+	width: 90%;
+	background:#e0e0e0 ;
+	color:#424242;
+ 	padding: 5px;
+	border-radius: 20px;
+}
+.informacionGeneral h4{
+	color:#424242;
+}
+.Formulario{
+	width: 90%;
+}
+table{
+	border-collapse: collapse;
+	text-align: left;
+	width: 90%;
+	margin: 40px;
+}
+.tabla{
+	margin-top:8px;
+	padding-top: 7px;
+}
+thead{
+	background:  #25A6D9;
+	color: #fff;
+}
+thead th{
+	color: #fff;
+	font-size: 15px;
+	padding:10px;
+	border-bottom:1px solid #e0e0e0; 
+	
+}
+td{
+	padding: 20px;
+	font-size: 15px;
+	color:#424242;
+	border-bottom:1px solid #e0e0e0; 
+}
+tr:hover td{
+	background: #bdbdbd;
+	color: #fff;
+}
+.card-info{
+	width: 96%;
+	height: 30%;
+	padding:5px;
+	margin-bottom: 2px;	
+
+}
+.informacion{
+	width: 28%;
+	padding:10px;
+	float:left;
+	border:1px solid #e0e0e0; 
+	margin:3px;
+
+}
+.informacion p{
+	text-align: justify;
+	color: #424242;
+}
+
+.informacion img{
+	width: 26px;
+}
+
+.informacion img{
+	clip-path: circle();
+	width: 30%;
+	height: 30%;
+}
+
+.more-info{
+	border-top:3px solid  #e0e0e0; 	
+	width: 90%;
+	padding:20px;
+	float: left;
+}
+
+.more-info img{
+width: 40%;
+float: left;
+border-radius: 48% 52% 85% 15% / 30% 33% 67% 70% ;
+
+}
+.more-info h4 p{
+	float:left;
+}
+.buscar{
+	padding-top: 30px;
+}
+.buscar input{
+	border-radius: 40px;
+	border:1px solid #e0e0e0;
+	outline: none;
+}
+.buscar input:focus{
+	outline: none;
+}
+.buscar .btn{
+	width: 100px;
+
+}
+.sidebar img{
+	width: 200px;
+}
+
+.social {
+	height: 100px;
+}
+
+.social img{
+	width: 32px;
+	padding: 8px;
+}
