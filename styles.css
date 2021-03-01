@@ -193,6 +193,8 @@ table{
 	margin: 40px;
 }
 .tabla{
+	overflow-y: scroll;
+	height: 350px;
 	margin-top:8px;
 	padding-top: 7px;
 }
@@ -289,4 +291,15 @@ border-radius: 48% 52% 85% 15% / 30% 33% 67% 70% ;
 .social img{
 	width: 32px;
 	padding: 8px;
+}
+
+.btn-eliminar{
+	border-radius: 4px;
+	background: #D92546;
+	width: 98;
+	color: #fff;
+	border:10px solid #D92546;
+	box-shadow: 7px 9px 5px -6px rgba(164,164,164,0.47);
+	-webkit-box-shadow: 7px 9px 5px -6px rgba(164,164,164,0.47);
+	-moz-box-shadow: 7px 9px 5px -6px rgba(164,164,164,0.47);
 }

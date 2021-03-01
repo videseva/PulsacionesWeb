@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mi primera pagina</title>
+	<title>Pulsaciones</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -49,27 +49,30 @@
 	   				<h4>FORMULARIO DE REGISTRO</h4>
 	   				<div class="input-datos">
 	   					<label for="fname">Identificacion:</label>
-	 					   <input type="text" id="nombre" name="nombre" placeholder="Digite su identificacion">
+	 					   <input type="number" id="identificacion" name="identificacion" placeholder="Digite su identificacion">
 	   				</div>
 	   					<br>
 	   				<div class="input-datos">
 		 				   <label for="fname">Nombre:</label>
-		 				   <input type="text" id="edad" name="edad" placeholder="Digite su nombre ">
+		 				   <input type="text" id="nombre" name="nombre" placeholder="Digite su nombre ">
 	   				</div>
 	   				<br>
 	               <div class="input-datos">
 	                  <label for="fname">Edad:</label>
-	                  <input type="text" id="nombre" name="nombre" placeholder="Digite su edad">
+	                  <input type="text" id="edad" name="edad" placeholder="Digite su edad">
 	               </div>
 	               <br>
 	   				<div class="input-datos">
 	 					<LABEL>Genero :</LABEL>
-	 					<select id="sexo" name ="sexo">
+	 					<select id="sexo" name ="sexo" onchange="prueba()">
+	 						<option value="" style="display: none;">Seleccione una opción...</option>
 		 					<option value="F"> FEMENINO</option>
 		 					<option value="M"> MASCULINO</option>
 	 					</select>
 	   				</div>
-					<br><button class="btn">Calcular</button>
+					<br><button type="button" class="btn" onclick="registrarPulsacion()">Calcular</button>
+
+	   				<p id="resultado"></p>
 	   				</form>
    			</section>
    			
@@ -79,5 +82,7 @@
    		</footer>
 	</div>
 	</div>
+
+   	<script src="script.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mi primera pagina</title>
+	<title>Pulsaciones</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -47,16 +47,27 @@
                <table>
                   <thead>
                      <tr>
-                        <th>    </th>
                         <th>IDENTIFICACIÓN</th>
                         <th>NOMBRE</th>
                         <th>EDAD </th>
                         <th>GENERO</th>
                         <th>PULSACION</th>
+                        <th>Acción</th>
                      </tr>
                   </thead>
-                  <tr><td class="checkbox-table"><input type="checkbox" name="" value=""></td><td>1065831130</td><td>EVA VIDES</td><td>24</td><td>FEMENINO</td><td>198</td></tr>
-                  <tr><td class="checkbox-table"><input type="checkbox" name="" value=""></td><td>1065778934</td><td>SOFIA LOPEZ</td><td>20</td><td>FEMENINO</td><td>98</td></tr>
+                  <tbody id="listadoPulsaciones">
+                     <tr>
+                        <td>1065831130</td>
+                        <td>EVA VIDES</td>
+                        <td>24</td>
+                        <td>FEMENINO</td>
+                        <td>198</td>
+                        <td>
+                           <button  type="button" class="btn-eliminar">Eliminar</button>
+                        </td>
+                     </tr>
+                  </tbody>
+                  
                </table>
             </div>
    		</article>
@@ -65,5 +76,7 @@
    		</footer>
 	</div>
 	</div>
+
+   <script src="script.js"></script>
 </body>
 </html>
