@@ -21,13 +21,13 @@
                <nav class="nav nav-pills nav-fill">
             <ul class="nav">
                <li class="nav-item">
-                  <a class="nav-item nav-link active" href="index.html"></i>INICIO</a>
+                  <a class="nav-item nav-link" href="index.html"></i>INICIO</a>
                </li>
                <li>
                   <a class="nav-item nav-link" href="registrar.html">REGISTRAR</a>
                </li>
                <li class="nav-item">
-                  <a class="nav-item nav-link" href="consultar.html">CONSULTAR</a>
+                  <a class="nav-item nav-link active" href="consultar.html">CONSULTAR</a>
                </li>
             </ul>
          </nav> 
@@ -67,45 +67,28 @@
          </div><!--Cierre del aside-->
 
          <div class="col-md-8">
-            <div class="row">
-               <div class="col-sm-4">
-                  <div class="card-body">
-                     <div class="text-center">
-                        <i class="fas fa-stopwatch fa-4x"></i>
-                     </div>
-                     <p class="card-text">Se puede tomar el pulso contando los latidos en un período de tiempo y multiplicando esa cifra para obtener el número de latidos por minuto.</p>
-                  </div>      
-               </div>
-               <div class="col-sm-4">
-                  <div class="card-body">
-                     <div class="text-center">
-                        <i class="fas fa-user-md fa-4x"></i>
-                     </div>
-                     <p class="card-text">Por lo general, su médico le revisa el pulso durante un examen físico, pero usted puede aprender a tomar su propio pulso</p>
-                  </div>          
-               </div>
-               <div class="col-sm-4">
-                  <div class="card-body">
-                     <div class="text-center">
-                        <i class="fas fa-heartbeat fa-4x"></i>
-                     </div>
-                     <p class="card-text">Mientras su corazón bombea sangre por el cuerpo, puede sentir pulsaciones en algunos de los vasos sanguíneos cercanos a la piel</p>
-                  </div>          
-               </div> 
-            </div> 
-
-            <hr>
-
-            <div class ="row">
-               <div class="col-sm-8">
-                 <div class="card-body">
-                     <h5 class="card-title">PULSACIÓN</h5>
-                     <p class="card-text">El pulso es la frecuencia a la que late el corazón. El pulso que, generalmente, se conoce como frecuencia cardíaca, es el número de veces que late el corazón por minuto (lpm). Sin embargo, también se pueden observar el ritmo y la fuerza de los latidos del corazón, así como si un vaso sanguíneo está duro o blando. Los cambios en la frecuencia cardíaca o el ritmo, un pulso débil o un vaso sanguíneo duro podrían ser causados por enfermedades cardíacas.</p>
-                  </div>         
-               </div>
-               <div class="col-sm-4 ">
-                  <img class="gif"src="media/doctor.gif" alt="">
-               </div>
+            <h4>Consultar datos registrados</h4><br>
+            <div class="alert alert-dismissible alert-primary">
+              <strong>Más información.</strong>
+              <p>
+                 El pulso es la frecuencia a la que late el corazón. El pulso que, generalmente, se conoce como frecuencia cardíaca, es el número de veces que late el corazón por minuto (lpm). Sin embargo, también se pueden observar el ritmo y la fuerza de los latidos del corazón
+              </p>
+            </div>
+            <br>
+            <div class="tabla">
+               <table class="table table-hover">
+                  <thead>
+                   <tr>
+                     <th>IDENTIFICACIÓN</th>
+                     <th>NOMBRE</th>
+                     <th>EDAD </th>
+                     <th>GENERO</th>
+                     <th>PULSACIÓN</th>
+                   </tr>
+                  </thead>
+                  <tbody id="listadoPulsaciones">
+                  </tbody>
+               </table>
             </div>
          </div><!--Cierre del contenido-->
       </div>

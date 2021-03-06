@@ -4,19 +4,18 @@ function prueba(){
 }
 //REGISTRAR PULSACION
 function registrarPulsacion(){
-
 	var identificacion = document.getElementById("identificacion").value;
 	var nombre = document.getElementById("nombre").value;
 	var edad = document.getElementById("edad").value;
 	var sexo = document.getElementById("sexo").value;
 	var pulsacion_calculo = 0;
-
+	var pulsaciones = localStorage.getItem('pulsaciones');
 	if(identificacion && nombre && edad && sexo){
 		if(sexo=='F'){
 			pulsacion_calculo =(220 - edad) /10;
 		}else{
 			pulsacion_calculo =(210 - edad) /10;
-		};
+		}
 
 		//creo mi objeto
 		var pulsacion = {
@@ -26,8 +25,7 @@ function registrarPulsacion(){
 			sexo : sexo,
 			pulsacion : pulsacion_calculo
 		};
-
-		var pulsaciones = localStorage.getItem('pulsaciones');
+	
 		if(pulsaciones){
 			pulsaciones = JSON.parse(pulsaciones);
 		}else{
@@ -38,10 +36,11 @@ function registrarPulsacion(){
 		console.log(pulsacion);
 		//AGREGAR AL ARRAY
 		console.log(pulsaciones);
+
 		localStorage.setItem('pulsaciones', JSON.stringify(pulsaciones));
 		limpiarCampos();
-		alert("Se registro su pulsacion de forma exitosa. ");
-		document.getElementById('resultado').innerHTML ="Su pulsacion es :"+pulsacion_calculo;
+		alert("Se registro su pulsación de forma exitosa. ");
+		document.getElementById('resultado').innerHTML ="Su pulsación es : "+pulsacion_calculo;
 	}else{
 		alert("Debe completar los campos requerios.");
 	}
@@ -66,7 +65,7 @@ function consultarPulsaciones(){
 		item += '<td>'+ p.sexo +'</td>';
 		item += '<td>'+ p.pulsacion +'</td>';
 		item += '<td>';
-		item += '<button  type="button" class="btn-eliminar">Eliminar</button>';
+		//item += '<button  type="button" class="btn-eliminar">Eliminar</button>';
 		item += '</td>';
 		item += '</tr>';
 	}
@@ -77,6 +76,8 @@ function consultarPulsaciones(){
 	}
 	console.log(pulsaciones);
 }
+
+
 
  function limpiarCampos(){
   	document.getElementById("identificacion").value='';

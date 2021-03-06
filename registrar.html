@@ -21,10 +21,10 @@
                <nav class="nav nav-pills nav-fill">
             <ul class="nav">
                <li class="nav-item">
-                  <a class="nav-item nav-link active" href="index.html"></i>INICIO</a>
+                  <a class="nav-item nav-link" href="index.html"></i>INICIO</a>
                </li>
                <li>
-                  <a class="nav-item nav-link" href="registrar.html">REGISTRAR</a>
+                  <a class="nav-item nav-link active" href="registrar.html">REGISTRAR</a>
                </li>
                <li class="nav-item">
                   <a class="nav-item nav-link" href="consultar.html">CONSULTAR</a>
@@ -67,46 +67,56 @@
          </div><!--Cierre del aside-->
 
          <div class="col-md-8">
-            <div class="row">
-               <div class="col-sm-4">
-                  <div class="card-body">
-                     <div class="text-center">
-                        <i class="fas fa-stopwatch fa-4x"></i>
-                     </div>
-                     <p class="card-text">Se puede tomar el pulso contando los latidos en un período de tiempo y multiplicando esa cifra para obtener el número de latidos por minuto.</p>
-                  </div>      
-               </div>
-               <div class="col-sm-4">
-                  <div class="card-body">
-                     <div class="text-center">
-                        <i class="fas fa-user-md fa-4x"></i>
-                     </div>
-                     <p class="card-text">Por lo general, su médico le revisa el pulso durante un examen físico, pero usted puede aprender a tomar su propio pulso</p>
-                  </div>          
-               </div>
-               <div class="col-sm-4">
-                  <div class="card-body">
-                     <div class="text-center">
-                        <i class="fas fa-heartbeat fa-4x"></i>
-                     </div>
-                     <p class="card-text">Mientras su corazón bombea sangre por el cuerpo, puede sentir pulsaciones en algunos de los vasos sanguíneos cercanos a la piel</p>
-                  </div>          
-               </div> 
-            </div> 
-
-            <hr>
-
-            <div class ="row">
-               <div class="col-sm-8">
-                 <div class="card-body">
-                     <h5 class="card-title">PULSACIÓN</h5>
-                     <p class="card-text">El pulso es la frecuencia a la que late el corazón. El pulso que, generalmente, se conoce como frecuencia cardíaca, es el número de veces que late el corazón por minuto (lpm). Sin embargo, también se pueden observar el ritmo y la fuerza de los latidos del corazón, así como si un vaso sanguíneo está duro o blando. Los cambios en la frecuencia cardíaca o el ritmo, un pulso débil o un vaso sanguíneo duro podrían ser causados por enfermedades cardíacas.</p>
-                  </div>         
-               </div>
-               <div class="col-sm-4 ">
-                  <img class="gif"src="media/doctor.gif" alt="">
-               </div>
+            <h4>Calcular pulsación</h4><br>
+            <div class="alert alert-dismissible alert-primary">
+              <strong>Más información.</strong>
+              <p>
+                 El pulso es la frecuencia a la que late el corazón. El pulso que, generalmente, se conoce como frecuencia cardíaca, es el número de veces que late el corazón por minuto (lpm). Sin embargo, también se pueden observar el ritmo y la fuerza de los latidos del corazón
+              </p>
             </div>
+            <br>  
+            <form>
+               <legend>Formulario de registro</legend>
+               <div class="form-group row">
+                  <label class="col-sm-2 col-form-label" for="identificacion">Identificación:</label>
+                  <div class="col-sm-10">
+                     <input type="number" class="form-control" placeholder="Digite su identificación" id="identificacion">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label class="col-sm-2 col-form-label" for="nombre">Nombre:</label>
+                  <div class="col-sm-10">
+                     <input type="text" class="form-control" placeholder="Digite su nombre" id="nombre">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label class="col-sm-2 col-form-label" for="edad">Edad:</label>
+                  <div class="col-sm-10">
+                     <input type="number" class="form-control" placeholder="Digite su edad" id="edad">
+                  </div>
+               </div>
+               <div class="form-group row">
+                  <label class="col-sm-2 col-form-label" for="sexo">Género :</label>
+                  <div class="col-sm-10">
+                     <select class="form-control" id="sexo" >
+                        <option value="" style="display: none;">Seleccione una opción...</option>
+                        <option value="F">FEMENINO</option>
+                        <option value="M">MASCULINO</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-sm-6">
+                     <button type="button" class="btn btn-primary" onclick="registrarPulsacion()">Calcular</button>  
+                  </div>
+                  <div class="col-sm-6">
+                     <p class="text-success" id="resultado"></p>
+                  </div>
+               </div>
+               
+
+
+            </form>
          </div><!--Cierre del contenido-->
       </div>
 
